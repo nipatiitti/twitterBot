@@ -12,7 +12,7 @@ const PORT = CONFIG.port
 app.use(morgan('tiny'))
 
 // Priority serve static files.
-app.use(express.static(path.join(__dirname, '../front-end/build')))
+app.use(express.static(path.join(__dirname, '../build')))
 
 // Middlewares
 app.use(bodyParser.json({limit: '50mb'}))
