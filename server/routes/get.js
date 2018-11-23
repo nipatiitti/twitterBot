@@ -31,7 +31,7 @@ async function handleGet(req, res) {
           })
       })
       .catch(e => {
-        console.error(e)
+        console.error(e.twitterReply)
         res.status(400).json({
           loading: false,
           verified: false
