@@ -139,7 +139,7 @@ class EditAccount extends Component {
                 name='tweet'
             />
             <div style={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}} >
-                <Checkbox checked={this.state.delaySelected} onChange={this.onChange('delaySelected')} />
+                <Checkbox value={'delaySelected'} checked={this.state.delaySelected} onChange={() => this.setState(oldState => ({delaySelected: !oldState.delaySelected}))} />
                 <p>Add delay?</p>
             </div>
             {this.state.delaySelected &&
