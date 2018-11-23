@@ -7,7 +7,7 @@ async function handleGet(req, res) {
     access_token,
     access_token_secret
   } = req.body
-
+  console.log(req.body)
   if(
     consumer_key
     && consumer_secret
